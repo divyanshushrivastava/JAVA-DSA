@@ -7,15 +7,21 @@ public class j {
 		System.out.print("NOE: ");
 		int v = in.nextInt();
 
-		int i = v;
-		while(i >= 1) {
-			int j = 1;
-			while(j <= i) {
-				System.out.print(j + " ");
-				j++;
+		for(int i = 1; i <= v; i++) {
+
+			for(int j = 1; j <= i; j++) {
+				System.out.print(j);
 			}
+
+			for(int s = 1; s <= 2 * (v - i); s++) {
+				System.out.print(" ");
+			}
+
+			for(int j = i; j >= 1; j--) {
+				System.out.print(j);
+			}
+
 			System.out.println();
-			i--;
 		}
 	}
 }

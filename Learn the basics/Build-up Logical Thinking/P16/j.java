@@ -7,15 +7,14 @@ public class j {
 		System.out.print("NOE: ");
 		int v = in.nextInt();
 
-		int i = v;
-		while(i >= 1) {
-			int j = 1;
-			while(j <= i) {
-				System.out.print(j + " ");
-				j++;
+		char c = 'A';
+
+		for(int i = 1; i <= v; i++) {
+			for(int j = 1; j <= i; j++) {
+				System.out.print(c);
 			}
+			c++;
 			System.out.println();
-			i--;
 		}
 	}
 }
