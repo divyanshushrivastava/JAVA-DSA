@@ -1,4 +1,4 @@
-import Utilities.RunLogger;
+import Utilities.Log;
 import java.util.Scanner;
 
 class Recursion {
@@ -22,26 +22,16 @@ public class j {
         System.out.print("Name: ");
         String name = in.nextLine();
 
-        // ---- build generic log strings ----
-        String inputLog =
+        String ilog =
             "Input:\n" +
             "N: " + n + "\n" +
             "Name: " + name + "\n";
+        
+        Log.startCapture();
 
-        StringBuilder outputBuilder = new StringBuilder();
-        for (int i = 0; i < n; i++) {
-            outputBuilder.append(name).append("\n");
-        }
-
-        String outputLog =
-            "Output:\n" +
-            outputBuilder.toString();
-
-        // ---- write to file ----
-        RunLogger.write(inputLog + outputLog);
-
-        // ---- normal output ----
         r.fn(name, 0, n);
+
+	Log.write(ilog);
 
         in.close();
     }

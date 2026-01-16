@@ -1,0 +1,29 @@
+Input:
+N: 24
+Name: D
+
+Output:
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D
+D

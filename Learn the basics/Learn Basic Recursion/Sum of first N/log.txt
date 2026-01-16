@@ -1,0 +1,5 @@
+Input:
+N: 10
+
+Output:
+55
