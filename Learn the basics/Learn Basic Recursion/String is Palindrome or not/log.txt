@@ -1,0 +1,5 @@
+Input 
+String: redivider
+
+Output:
+Palindrome
